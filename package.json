@@ -1,0 +1,31 @@
+{
+  "name": "homewatch-js",
+  "version": "1.0.0",
+  "main": "src/api.js",
+  "license": "MIT",
+  "typings": "./index.d.ts",
+  "engines": {
+    "node": ">=7.0.0"
+  },
+  "scripts": {
+    "lint": "./node_modules/.bin/eslint src/**/*.js examples/**/*.js test/**/*.js",
+    "lint-fix": "./node_modules/.bin/eslint --fix src/**/*.js examples/**/*.js test/**/*.js",
+    "test": "./node_modules/istanbul/lib/cli.js cover ./node_modules/.bin/_mocha"
+  },
+  "dependencies": {
+    "@types/node": "^8.0.10",
+    "axios": "^0.16.1",
+    "homewatch-js": "LeonelGoncalves12/homewatch-wrapper",
+    "memory-cache": "^0.1.6"
+  },
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "eslint": "^3.19.0",
+    "eslint-config-google": "^0.7.1",
+    "faker": "^4.1.0",
+    "istanbul": "^0.4.5",
+    "mocha": "^3.3.0",
+    "nock": "^9.0.13",
+    "rosie": "^1.6.0"
+  }
+}
